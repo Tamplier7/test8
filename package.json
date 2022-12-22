@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://yabr87.github.io/filmoteka-group-project/",
+  "homepage": "https://Tamplier7.github.io/test8/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /filmoteka-group-project/"
+    "build": "parcel build src/*.html --public-url /test8/"
   },
   "repository": {
     "type": "git",
