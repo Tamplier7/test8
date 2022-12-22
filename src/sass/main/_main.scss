@@ -1,0 +1,131 @@
+.main {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  display: flex;
+
+  @include tablet {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+.main-library-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  padding-top: 20px;
+  padding-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    gap: 32px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 32px 16px;
+  }
+}
+
+.main-library-item {
+  cursor: pointer;
+
+  // border: 1px solid #eee;
+  // border-radius: 4px;
+
+  width: 100%;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 32px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 32px) / 3);
+  }
+
+  &:hover,
+  &:focus {
+    // box-shadow: -10px -10px 20px $white-text-color,
+    //   10px 10px 20px rgba(72, 121, 150, 0.1),
+    //   5px 5px 10px rgba(72, 121, 150, 0.25), -5px -5px 10px $white-text-color;
+    transform: scale(1.025);
+  }
+
+  // transition: box-shadow $duration $timing-function;
+  transition: transform $duration $timing-function;
+}
+
+.main-film-poster {
+  width: 100%;
+
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    // width: 336px;
+    height: 455px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    // width: 394px;
+    height: 574px;
+    margin-bottom: 12px;
+  }
+}
+
+.main-film-name {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.16;
+  text-transform: uppercase;
+
+  color: $black-text-color;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.33;
+  }
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.2;
+  }
+}
+
+.main-film-description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.33;
+
+  color: $color-accent;
+
+  @media screen and (min-width: 1280px) {
+    line-height: 1.2;
+  }
+}
+
+.container {
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mobile {
+    max-width: 480px;
+  }
+
+  @include tablet {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @include desktop {
+    max-width: 1280px;
+  }
+}
+.stretch {
+  flex-grow: 1;
+}
